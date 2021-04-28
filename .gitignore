@@ -1,0 +1,8 @@
+# dependencies
+node_modules
+
+# config
+.vscode
+
+# test
+coverage

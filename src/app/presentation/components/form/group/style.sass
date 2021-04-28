@@ -1,0 +1,38 @@
+@import "../../../style/_variables"
+
+.form-size
+  display: grid
+  margin: auto
+  max-width: 71.2rem
+
+.form--group-size
+  @extend .form-size
+  grid-template-areas: "slot-left slot-right"
+  grid-template-columns: 3FR 1FR
+  width: 100%
+  min-width: 13.2rem
+  max-width: 71.2rem
+
+  @media (max-width: $breakpoint-md)
+    grid-template-areas: "slot-right" "slot-left"
+    grid-template-columns: 1FR
+
+.form--group-slot
+  display: flex
+  margin: auto
+  width: 100%
+
+.form--group-slot-left
+  @extend .form--group-slot
+  grid-area: "slot-left"
+  flex-wrap: wrap
+
+  div:nth-child(2n-1)
+    margin-right: 1rem
+
+  div:nth-child(3n)
+    margin-top: 2rem
+
+.form--group-slot-right
+  @extend .form--group-slot
+  grid-area: "slot-right"

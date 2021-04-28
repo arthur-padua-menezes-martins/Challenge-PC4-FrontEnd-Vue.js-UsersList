@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "plugin:vue/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": ".",
+    "parser": "babel-eslint",
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "rules": {}
+}

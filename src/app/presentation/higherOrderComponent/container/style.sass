@@ -1,0 +1,69 @@
+@import "../../style/_variables"
+
+.container-size
+  display: grid
+  margin: auto
+  width: 90vw
+  min-width: 30rem
+
+.container--main-size
+
+// .container--versatile-size
+//   @extend .container-size
+//   grid-template-areas: "slot-left"
+//   grid-template-columns: 1FR
+
+// .container--versatile-size-many
+//   @extend .container-size
+//   grid-template-areas: "slot-left slot-right"
+//   grid-template-columns: 2FR 1FR
+
+//   @media (max-width: $breakpoint-md)
+//     grid-template-areas: "slot-right" "slot-left"
+//     grid-template-columns: 1FR
+
+// .container--versatile-slot
+//   display: flex
+//   margin: auto
+//   min-width: 26rem
+
+// .container--versatile-slot-left
+//   @extend .container--versatile-slot
+//   grid-area: "slot-left"
+
+// .container--versatile-slot-right
+//   @extend .container--versatile-slot
+//   grid-area: "slot-right"
+
+.container--middle-size
+  @extend .container-size
+  min-height: 30rem
+
+.container--border-size
+  @extend .container-size
+  grid-template-columns: 1FR 1FR
+
+.container--border-top
+  height: 5rem
+  border-bottom: 0.1rem $gray-secondary-low-opacity solid
+  border-radius: 0.4rem 0.4rem 0rem 0rem
+
+.container--border-bottom
+  height: 5rem
+  border-top: 0.1rem $gray-secondary-low-opacity solid
+  border-radius: 0rem 0rem 0.4rem 0.4rem
+
+.container--border-slot
+  margin: 2rem
+
+@mixin xl
+  @media (max-width: $breakpoint-xl)
+    @content
+
+@mixin lg
+  @media (max-width: $breakpoint-lg)
+    @content
+
+@mixin md
+  @media (max-width: $breakpoint-md)
+    @content
