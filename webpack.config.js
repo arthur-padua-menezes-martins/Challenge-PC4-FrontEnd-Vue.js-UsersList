@@ -4,6 +4,9 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const { VueLoaderPlugin } = require("vue-loader")
 
 module.exports = {
+  stats: {
+    warnings: false
+  },
   mode: process.env.ENVIRONMENT === "production" ? "production" : "development",
   entry: "/src/app/main/index.ts",
   output: {

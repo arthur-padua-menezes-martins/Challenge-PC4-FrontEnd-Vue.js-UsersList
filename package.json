@@ -36,10 +36,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "dev": "webpack-dev-server --hot --open",
-    "test": "jest --passWithNoTests --watch --runInBand",
-    "test:all": "npm test -- --watch -c --runInBand",
-    "test:staged": "npm test -- --findRelatedTests --runInBand",
-    "test:ci": "npm test -- --coverage"
+    "dev": "webpack-dev-server --hot --open"
   }
 }

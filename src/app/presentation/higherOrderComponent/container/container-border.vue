@@ -24,7 +24,6 @@ class ContainerBorder extends Vue {
   direction: 1 | 2 | undefined
 
   get containerDirection() {
-    console.log({direction: this.direction })
     return {
       "container--border-top": this.direction == 1,
       "container--border-bottom": this.direction == 2,
